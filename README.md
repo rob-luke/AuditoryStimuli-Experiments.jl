@@ -1,6 +1,5 @@
 # Auditory Experiments
 
-#### Example experiments built on AuditoryStimuli.jl
 
 ## Instructions
 
