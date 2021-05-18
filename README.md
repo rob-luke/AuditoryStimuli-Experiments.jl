@@ -6,6 +6,7 @@
 
 Each experiment is contained in a directory. Each experiment contains a Project.toml file to allow precise reproduction of the experimental setup and behaviour.
 
+Each experiment will output results as a csv file in the directory it is run. And may also output a log file or summary result.
 
 ## Experiments
 
