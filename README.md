@@ -15,11 +15,11 @@ Experiments use a basic terminal graphical interface to guide the participant.
 
 This experiment...
 
-To execute this experiment run `julia --project=. threshold-3afc.jl`
+To execute this experiment run `julia --project=. threshold-3afc.jl` from the experiment subdirectory.
 
 #### Two Alternative Forced Choice Lateralisation Task (Lateralisation-2AFC)
 
 This experiment...
 
-To execute this experiment run `julia --project=. lateralisarion-2afc.jl`
+To execute this experiment run `julia --project=. lateralisarion-2afc.jl` from the experiment subdirectory.
 
