@@ -19,3 +19,8 @@ This experiment...
 To execute this experiment run `julia --project=. threshold-3afc.jl`
 
 #### Two Alternative Forced Choice Lateralisation Task (Lateralisation-2AFC)
+
+This experiment...
+
+To execute this experiment run `julia --project=. lateralisarion-2afc.jl`
+
