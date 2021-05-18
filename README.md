@@ -8,6 +8,8 @@ Each experiment is contained in a directory. Each experiment contains a Project.
 
 Each experiment will output results as a csv file in the directory it is run. And may also output a log file or summary result.
 
+Experiments use a basic terminal graphical interface to guide the participant.
+
 ## Experiments
 
 #### Three Alternative Forced Choice Theshold Task (Threshold-3AFC)
