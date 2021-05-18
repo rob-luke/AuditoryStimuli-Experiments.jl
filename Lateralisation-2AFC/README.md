@@ -1,0 +1,3 @@
+# Two Alternative Forced Choice Lateralisation Experiment
+
+In this experiment...

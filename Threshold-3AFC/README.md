@@ -1,0 +1,3 @@
+# Three Alternative Forced Choice Threshold Task
+
+In this experiment...
