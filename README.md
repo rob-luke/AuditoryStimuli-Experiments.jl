@@ -1,5 +1,6 @@
 # Auditory Experiments
 
+#### Work in progress. Not stable
 
 ## Instructions
 
@@ -13,7 +14,11 @@ Experiments use a basic terminal graphical interface to guide the participant.
 
 #### Three Alternative Forced Choice Theshold Task (Threshold-3AFC)
 
-This experiment...
+In this experiment listeners are presented with trials consisting of three intervals.
+One interval will contain a noise stimulus, the other two will contain only silence.
+The interval which contains the noise will be randomised.
+The listener is asked to identify the interval which contained the noise stimulus.
+The level of the presented stimulus will be adaptively varied using a 2 down 1 up procedure to estimate the perceptual threshold.
 
 To execute this experiment run `julia --project=. threshold-3afc.jl` from the experiment subdirectory.
 
