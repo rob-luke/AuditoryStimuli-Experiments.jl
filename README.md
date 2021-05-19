@@ -2,6 +2,9 @@
 
 #### Work in progress. Not stable
 
+This repository contains example experiments built on top of [AuditoryStimuli.jl](https://github.com/rob-luke/AuditoryStimuli.jl).
+Some experiments also make extensive use of [Psychophysics.jl](https://github.com/sam81/Psychophysics.jl) and [TextUserInterfaces.jl]()
+
 ## Instructions
 
 Each experiment is contained in a directory. Each experiment contains a Project.toml file to allow precise reproduction of the experimental setup and behaviour.
