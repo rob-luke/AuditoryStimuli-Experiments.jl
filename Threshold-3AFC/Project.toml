@@ -1,2 +1,5 @@
 [deps]
 AuditoryStimuli = "8341a549-d843-5d3b-924f-10e41641b3ea"
+
+[compat]
+AuditoryStimuli = "0.0.10"
