@@ -3,7 +3,7 @@
 #### Work in progress. Not stable
 
 This repository contains example experiments built on top of [AuditoryStimuli.jl](https://github.com/rob-luke/AuditoryStimuli.jl).
-Some experiments also make extensive use of [Psychophysics.jl](https://github.com/sam81/Psychophysics.jl) and [TextUserInterfaces.jl]()
+Some experiments also make extensive use of [Psychophysics.jl](https://github.com/sam81/Psychophysics.jl) and [TextUserInterfaces.jl](https://github.com/ronisbr/TextUserInterfaces.jl)
 
 ## Instructions
 
