@@ -1,0 +1,7 @@
+[deps]
+AuditoryStimuli = "8341a549-d843-5d3b-924f-10e41641b3ea"
+DSP = "717857b8-e6f2-59f4-9121-6e50c889abd2"
+Pipe = "b98c9c47-44ae-5843-9183-064241ee97a0"
+SampledSignals = "bd7594eb-a658-542f-9e75-4c4d8908c167"
+TerminalUserInterfaces = "408767e4-586b-40c7-9657-f9758988469a"
+Unitful = "1986cc42-f94f-5a68-af5c-568840ba703d"
