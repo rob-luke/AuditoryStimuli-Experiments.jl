@@ -1,7 +1,16 @@
+########################
+# Import Packages
+########################
+
 using TerminalUserInterfaces
 const TUI = TerminalUserInterfaces
 using Markdown
 using AuditoryStimuli, Pipe, Unitful, PortAudio
+
+
+##########################
+# Define Auditory Pipeline
+##########################
 
 source = NoiseSource(Float64, 44.1u"kHz", 1, 0.2)
 function get_soundcard_stream(soundcard::String="Fireface")
@@ -17,6 +26,11 @@ function get_soundcard_stream(soundcard::String="Fireface")
 end
 sink = get_soundcard_stream()
 
+
+###########################################
+# Function to play sounds and get responses
+###########################################
+
 function play_sound(duration = 1u"s")
     @pipe read(source, duration) |> write(sink, _)
 end
@@ -30,16 +44,23 @@ function get_response_and_clear(t)
 end
 
 
+###############
+# Main Function
+###############
+
 function main()
 
-
+    # Initialise user interface
     TUI.initialize()
     t = TUI.Terminal()
     TUI.clear_screen()
     TUI.hide_cursor()
 
+    # Play a test sound
     streaming = Threads.@spawn play_sound(0.2u"s")
     
+    description = "When you press either 1, 2, 3 it will play noise for that long"
+    split_description = split(description, " ")
     instructions = "Select duration of the sound (1, 2, 3)? NA"
     split_instructions = split(instructions, " ")
 
@@ -56,9 +77,9 @@ function main()
         # Draw description box
         r = TUI.Rect(5, h-35, w-10, 3)
         b = TUI.Block()
-        p = TUI.Paragraph(b, [TUI.Word(t, TUI.Crayon()) for t in split("When you press either 1, 2, 3 it will play noise for that long")], 1)
-
+        p = TUI.Paragraph(b, [TUI.Word(t, TUI.Crayon()) for t in split_description], 1)
         TUI.draw(t, p, r)
+        
         # Draw response box
         r = TUI.Rect(5, h-25, w-10, 3)
         b = TUI.Block()
